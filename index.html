@@ -1,36 +1,12 @@
+<!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-    <head>
-        <!-- development version, includes helpful console warnings -->
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    </head>
-    <body>
-        <div id="app">
-            <!-- Simple Message -->
-            {{ message }}
-
-            <!-- Clickable -->
-            <p>{{ message }}</p>
-            <button v-on:click="switchAlerts">Activer Alertes</button>
-            <div class="ui success message" v-if="alertsActivated">
-                <p>Alertes activées!</p>
-            </div>
-            div.ui.error.message
-
-
-            <!-- Input + Model (Synchronize with Data) -->
-            <!-- <p>{{ message }}</p>
-            <input v-model="message"> -->
-
-            <!-- Components -->
-            <ol>
-                <peripherals-item
-                    v-for="item in peripherals"
-                    v-bind:peripheral="item"
-                    v-bind:key="item.id"></peripherals-item>
-            </ol>
-        </div>
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>houseiot_web</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
-
